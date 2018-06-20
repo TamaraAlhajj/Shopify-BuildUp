@@ -2,15 +2,15 @@
 App development event
 
 
-#Project Fabric
-##Find the perfect apparel the fits you the best!
+# Project Fabric
+## Find the perfect apparel the fits you the best!
 
 
 
-##Development
+## Development
 Development is done with either a Linux host or WSL (Windows Sublinux)
 
-###Getting Started
+### Getting Started
 1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
 2. Install your dependencies
 
