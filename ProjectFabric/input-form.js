@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Button } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button, ScrollView } from 'react-native';
+import { KeyboardAvoidingView } from 'react-native';
 
 import t from 'tcomb-form-native'; // 0.6.9
 
@@ -67,18 +68,22 @@ export default class InputFormSizes extends Component {
   
   render() {
     return (
-      <View style={styles.wrapper}>
+    <View style={styles.wrapper}>
+        <ScrollView>
         <Text style={styles.title}>Enter your measurements below (cm):</Text>
-        <Form 
-          ref={c => this._form = c}
-          type={User} 
-          options={options}
-        />
-        <Button style={styles.button}
-          title="Find my size!"
-          onPress={this.handleSubmit}
-        />
-      </View>
+        <KeyboardAvoidingView style={{flex : 1}} keyboardVerticalOffset={-10} behavior="position">
+            <Form 
+                ref={c => this._form = c}
+                type={User} 
+                options={options}
+            />
+            <Button style={styles.button}
+            title="Find my size!"
+            onPress={this.handleSubmit}
+            />
+        </KeyboardAvoidingView>
+        </ScrollView>
+    </View>
     );
   }
 }
@@ -92,6 +97,9 @@ const styles = StyleSheet.create({
         //alignItems: 'center'
         padding: 50
     },
+    keyboard: {
+        flex: 1,
+    },
     container: {
         justifyContent: 'center',
         marginTop: 50,
@@ -99,9 +107,9 @@ const styles = StyleSheet.create({
     },
     button: {
         color: 'white',
-        flex: 1,
+        flex: 1,    
         fontWeight: 'bold',
-        marginBottom: 0,
+        padding: 20
     },
     title: {
         color: 'white',
