@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {Button} from 'react-native';
+import {TextInput, StyleSheet, Text, View } from 'react-native';
+//import { StackNavigator} from 'react-navigation';
 
 export default class Splash extends Component {
+
     render() {
         return (
             <View style={styles.wrapper}>
                 <Text style={styles.title}>BuildUp</Text>
                 <Text style={styles.subtitle}>Powered by React Native</Text>
             </View>
+            
         );
     }
 }
