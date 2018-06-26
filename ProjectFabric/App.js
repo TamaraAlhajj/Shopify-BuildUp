@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 //import {StackNavigator} from 'react-navigation';
 
 import Splash from './Splash';
-import InputForm from './input-form.js'
-
-//import Login from './src/components/Login/Login';
+//import InputForm from './src/components/measurement/input-form'
+import Login from './src/components/login/Login';
 
 export default class App extends React.Component {
 
   render() {
     return (
-      // Didn't figure out how to do the navigation thing.
-      // So for now we can just do it this way
-      // comment and comment ... :3 
-      <InputForm/>
+      //<InputForm/>
       //<Splash/>
+      <Login/>
     );
   }
 }
