@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-import {  Text, StyleSheet, TextInput, TouchableOpacity , KeyboardAvoidingView} from 'react-native';
+import {  Text, StyleSheet, TextInput, TouchableOpacity , KeyboardAvoidingView, ScrollView} from 'react-native';
 
 export default class LoginForm extends Component {
   render() {
     return (
-      <KeyboardAvoidingView behavior="padding" style={styles.container}>
-        <TextInput
-            placeholder="username"
-            placeholderTextColor="black"
-            style={styles.input}
-        />
-        <TextInput
-            placeholder="password"
-            placeholderTextColor="black"
-            secureTextEntry 
-            style={styles.input}
-        />
-        <TouchableOpacity style={styles.buttonContainer}>
-            <Text style={styles.buttonText}>LOGIN</Text>
-        </TouchableOpacity>
-      </KeyboardAvoidingView>
+        <ScrollView>
+        <KeyboardAvoidingView behavior="padding" style={styles.container}>
+            <TextInput
+                placeholder="username"
+                placeholderTextColor="black"
+                style={styles.input}
+            />
+            <TextInput
+                placeholder="password"
+                placeholderTextColor="black"
+                secureTextEntry 
+                style={styles.input}
+            />
+            <TouchableOpacity style={styles.buttonContainer}>
+                <Text style={styles.buttonText}>LOGIN</Text>
+            </TouchableOpacity>
+        </KeyboardAvoidingView>
+        </ScrollView>
     );
   }
 }

@@ -7,7 +7,7 @@ export default class Login extends Component {
         return (
             <View style={styles.content}>
                 <View style={styles.titleWrapper}>
-                    <Text style={styles.title}>Login Page</Text>
+                    <Text style={styles.title}>Please Login</Text>
                 </View>
                 <View style={styles.form}>
                     <LoginForm />

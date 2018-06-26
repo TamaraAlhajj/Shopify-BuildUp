@@ -7,7 +7,9 @@ export default class InputForm extends Component {
     <ScrollView>
     <View style={styles.container}>
             <KeyboardAvoidingView style={{flex : 1}} behavior="padding">
-                <Text style={styles.title}>What are your measurements</Text>
+                <Text style={styles.title}>
+                    What are your measurements
+                </Text>
                 <TextInput
                     placeholder="Height"
                     placeholderTextColor="black"
