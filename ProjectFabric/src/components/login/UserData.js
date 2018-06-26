@@ -1,7 +1,10 @@
+import Measurements from '../measurement/MeasurmentsData'
+
 class UserData {
 
-    constructor(username, password, email) {
+    constructor(username, password, email, measure) {
         //save measurements here ?
+        this.measure = Measurements(measure);
         this.username = username;
         this.password = password;
         this.email = email;

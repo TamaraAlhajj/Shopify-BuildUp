@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity , ScrollView, KeyboardAvoidingView} from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity , SectionList, ScrollView, KeyboardAvoidingView} from 'react-native';
+import { Button } from 'reactstrap';
 
 export default class InputForm extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class InputForm extends Component {
             <KeyboardAvoidingView style={{flex : 1}} behavior="padding">
                 <Text style={styles.title}>
                     What are your measurements
-                </Text>
+                </Text>    
                 <TextInput
                     placeholder="Height"
                     placeholderTextColor="black"
