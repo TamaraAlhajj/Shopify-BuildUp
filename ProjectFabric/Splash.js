@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, Image } from 'react-native';
 
 //TODO: image looks bad and is not aligned, fix with bkgrd color
+=======
+import {Button} from 'react-native';
+import {TextInput, StyleSheet, Text, View } from 'react-native';
+//import { StackNavigator} from 'react-navigation';
+>>>>>>> 94ac471dc9fcbdc29c1024564350b291b9760457
 
 export default class Splash extends Component {
+
     render() {
         return (
             <View style={styles.content}>
@@ -16,6 +23,7 @@ export default class Splash extends Component {
                 </View>
                     <Text style={styles.subtitle}>Powered by React Native</Text>
             </View>
+            
         );
     }
 }
