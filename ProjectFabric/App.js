@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 //import {StackNavigator} from 'react-navigation';
 
 import Splash from './Splash';
-//import InputForm from './src/components/measurement/input-form'
+import InputForm from './src/components/measurement/InputForm'
 import Login from './src/components/login/Login';
 
 export default class App extends React.Component {
 
   render() {
     return (
-      //<InputForm/>
+      <InputForm/>
       //<Splash/>
-      <Login/>
+      //<Login/>
     );
   }
 }
